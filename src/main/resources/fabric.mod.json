@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "Dragon Drops",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Adds new weapons, tools, and armor based off the Ender Dragon!",
   "authors": [
     "Boomexe"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/dragon-drops",
+    "sources": "https://github.com/Boomexe/Dragon-Drops"
   },
 
   "license": "MIT",
