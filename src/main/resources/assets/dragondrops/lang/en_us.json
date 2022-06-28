@@ -1,0 +1,26 @@
+{
+  "item.dragondrops.dragon_fragment": "Dragon Fragment",
+  "item.dragondrops.dragon_scale": "Dragon Scale",
+
+  "item.dragondrops.dragon_sword": "Dragon Sword",
+  "item.dragondrops.dragon_axe": "Dragon Axe",
+  "item.dragondrops.dragon_pickaxe": "Dragon Pickaxe",
+  "item.dragondrops.dragon_shovel": "Dragon Shovel",
+  "item.dragondrops.dragon_hoe": "Dragon Hoe",
+  "item.dragondrops.dragon_totem": "Dragon Scale-Plated Totem of Undying",
+
+  "item.dragondrops.dragon_sword.tooltip.shift": "Deals extra damage to §5end§r mobs",
+  "item.dragondrops.dragon_sword.tooltip": "Press §eSHIFT§r for more information",
+  "item.dragondrops.dragon_axe.tooltip.shift": "Deals extra damage to §5end§r mobs",
+  "item.dragondrops.dragon_axe.tooltip": "Press §eSHIFT§r for more information",
+  "item.dragondrops.dragon_pickaxe.tooltip.shift": "Deals extra damage to §5end§r mobs",
+  "item.dragondrops.dragon_pickaxe.tooltip": "Press §eSHIFT§r for more information",
+  "item.dragondrops.dragon_shovel.tooltip.shift": "Deals extra damage to §5end§r mobs",
+  "item.dragondrops.dragon_shovel.tooltip": "Press §eSHIFT§r for more information",
+  "item.dragondrops.dragon_hoe.tooltip.shift": "Deals extra damage to §5end§r mobs",
+  "item.dragondrops.dragon_hoe.tooltip": "Press §eSHIFT§r for more information",
+  "item.dragondrops.dragon_totem.tooltip.shift": "Protects from the void (DOESN'T WORK)",
+  "item.dragondrops.dragon_totem.tooltip": "Press §eSHIFT§r for more information",
+
+  "itemGroup.dragondrops.dragon_drops": "Dragon Drops"
+}

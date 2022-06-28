@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "dragondrops:dragon_hoe"
+    },
+    "title": "True Dedication",
+    "description": "Use a Dragon Scale to upgrade a Netherite Hoe... then contemplate the meaning of life",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraft:husbandry/obtain_netherite_hoe",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dragondrops:dragon_hoe"
+            ]
+          }
+        ]
+      }
+    },
+    "rewards": {
+      "experience": 150
+    }
+  }
+}

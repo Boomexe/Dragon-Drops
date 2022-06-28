@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "dragondrops:dragon_scale"
+  },
+  "base": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "item": "dragondrops:dragon_sword"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "dragondrops",
+  "version": "${version}",
+
+  "name": "Dragon Drops",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Boomexe"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "MIT",
+  "icon": "assets/dragondrops/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.boomexe.dragondrops.DragonDrops"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

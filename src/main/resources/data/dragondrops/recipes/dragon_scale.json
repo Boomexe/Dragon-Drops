@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+
+  "key": {
+    "#": {
+      "item": "dragondrops:dragon_fragment"
+    }
+  },
+
+  "result": {
+    "item": "dragondrops:dragon_scale"
+  }
+}
