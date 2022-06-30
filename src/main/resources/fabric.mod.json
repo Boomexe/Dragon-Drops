@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.boomexe.dragondrops.DragonDrops"
+    ],
+    "client": [
+      "net.boomexe.dragondrops.DragonDropsClient"
     ]
   },
 
