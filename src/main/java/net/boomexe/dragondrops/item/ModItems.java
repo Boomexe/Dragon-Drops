@@ -37,10 +37,10 @@ public class ModItems {
                     new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS)));
 
     public static final Item DRAGON_TOTEM = registerItem("dragon_totem",
-            new DragonTotemItem(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxCount(1)));
+            new DragonTotemItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item DRAGON_BOW = registerItem("dragon_bow",
-            new DragonBowItem(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxDamage(420)));
+            new DragonBowItem(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxDamage(520)));
 
     public static Item DRAGON_HELMET = registerItem("dragon_helmet",
             new ArmorItem(ModArmorMaterials.DRAGON, EquipmentSlot.HEAD,
