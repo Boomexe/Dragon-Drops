@@ -1,5 +1,6 @@
 package net.boomexe.dragondrops;
 
+import net.boomexe.dragondrops.config.ModConfigs;
 import net.boomexe.dragondrops.item.ModItems;
 import net.boomexe.dragondrops.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
@@ -12,6 +13,8 @@ public class DragonDrops implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModConfigs.registerServerConfigs();
+
         ModItems.registerModItems();
         ModLootTableModifiers.modifyLootTables();
 

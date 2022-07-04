@@ -7,7 +7,15 @@
   "item.dragondrops.dragon_pickaxe": "Dragon Pickaxe",
   "item.dragondrops.dragon_shovel": "Dragon Shovel",
   "item.dragondrops.dragon_hoe": "Dragon Hoe",
+
   "item.dragondrops.dragon_totem": "Dragon Scale-Plated Totem of Undying",
+  "item.dragondrops.dragon_bow": "Dragon Scale-Strengthened Bow",
+  "item.dragondrops.dragon_trident": "Dragon Scale-Strengthened Trident",
+
+  "item.dragondrops.dragon_helmet": "Dragon Helmet",
+  "item.dragondrops.dragon_chestplate": "Dragon Chestplate",
+  "item.dragondrops.dragon_leggings": "Dragon Leggings",
+  "item.dragondrops.dragon_boots": "Dragon Boots",
 
   "item.dragondrops.dragon_sword.tooltip.shift": "Deals extra damage to §5end§r mobs",
   "item.dragondrops.dragon_sword.tooltip": "Press §eSHIFT§r for more information",
@@ -21,6 +29,9 @@
   "item.dragondrops.dragon_hoe.tooltip": "Press §eSHIFT§r for more information",
   "item.dragondrops.dragon_totem.tooltip.shift": "Protects from the void (DOESN'T WORK)",
   "item.dragondrops.dragon_totem.tooltip": "Press §eSHIFT§r for more information",
+
+  "advancements.husbandry.obtain_dragon_hoe.title": "True Dedication",
+  "advancements.husbandry.obtain_dragon_hoe.description": "Use a Dragon Scale to upgrade a Netherite Hoe... then contemplate the meaning of life",
 
   "itemGroup.dragondrops.dragon_drops": "Dragon Drops"
 }
