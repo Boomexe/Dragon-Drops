@@ -11,11 +11,12 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
+	//Cloth Config
 	maven {
-		//cloth-config
 		url = "https://maven.shedaniel.me/"
 	}
 
+	// ModMenu
 	maven {
 		url "https://maven.terraformersmc.com/releases/"
 		content {
