@@ -74,9 +74,9 @@ public class DragonDropsConfig implements ConfigData {
     }
 
     public static class DragonBow {
-        @Comment("Normal bow is 3")
+        @Comment("How fast the arrow shoots.\nNormal bow is 3")
         public float dragon_bow_speed = 4F;
-        @Comment("Normal bow is 1")
+        @Comment("How accurate the bow is (0 < == less accurate)\nNormal bow is 1")
         public float dragon_bow_divergence = 0.7F;
         @ConfigEntry.Gui.RequiresRestart
         @Comment("Normal bow has 385 durability")
