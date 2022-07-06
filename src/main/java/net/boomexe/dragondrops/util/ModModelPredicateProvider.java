@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 public class ModModelPredicateProvider {
     public static void registerModModels() {
         registerBow(ModItems.DRAGON_BOW);
-//        registerTrident(ModItems.DRAGON_TRIDENT);
+        registerCrossbow(ModItems.DRAGON_CROSSBOW);
     }
 
     private static void registerBow(Item bow) {

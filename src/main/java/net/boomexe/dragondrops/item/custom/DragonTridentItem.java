@@ -1,5 +1,6 @@
 package net.boomexe.dragondrops.item.custom;
 
+import net.boomexe.dragondrops.entity.custom.DragonTridentEntity;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.MovementType;
@@ -35,14 +36,14 @@ public class DragonTridentItem extends TridentItem {
                             p.sendToolBreakStatus(user.getActiveHand());
                         });
                         if (j == 0) {
-                            ArrowEntity arrowEntity = new ArrowEntity(world, playerEntity);//world, playerEntity, stack);
-                            arrowEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, 2.5F + (float) j * 0.5F, 1.0F);
+                            DragonTridentEntity tridentEntity = new DragonTridentEntity(world, playerEntity, stack);
+                            tridentEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, 2.5F + (float)j * 0.5F, 1.0F);
                             if (playerEntity.getAbilities().creativeMode) {
-                                arrowEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
+                                tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                             }
 
-                            world.spawnEntity(arrowEntity);
-                            world.playSoundFromEntity((PlayerEntity) null, arrowEntity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
+                            world.spawnEntity(tridentEntity);
+                            world.playSoundFromEntity((PlayerEntity) null, tridentEntity, SoundEvents.ITEM_TRIDENT_THROW, SoundCategory.PLAYERS, 1.0F, 1.0F);
                             if (!playerEntity.getAbilities().creativeMode) {
                                 playerEntity.getInventory().removeOne(stack);
                             }
