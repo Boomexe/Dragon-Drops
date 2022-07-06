@@ -1,5 +1,6 @@
 package net.boomexe.dragondrops.item.custom;
 
+import net.boomexe.dragondrops.config.DragonDropsConfigReader;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.LivingEntity;
@@ -45,7 +46,11 @@ public class DragonBowItem extends BowItem {
             int j;
             ArrowItem arrowItem = (ArrowItem)(itemStack.getItem() instanceof ArrowItem ? itemStack.getItem() : Items.ARROW);
             PersistentProjectileEntity persistentProjectileEntity = arrowItem.createArrow(world, itemStack, playerEntity);
-            persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0f, f * 4.0f, 0.7f);
+            persistentProjectileEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(),
+                    0.0f,
+                    f * DragonDropsConfigReader.config.dragon_bow.dragon_bow_speed,
+                    DragonDropsConfigReader.config.dragon_bow.dragon_bow_divergence);
+
             if (f == 1.0f) {
                 persistentProjectileEntity.setCritical(true);
             }

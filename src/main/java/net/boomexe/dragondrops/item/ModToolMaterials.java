@@ -1,5 +1,6 @@
 package net.boomexe.dragondrops.item;
 
+import net.boomexe.dragondrops.config.DragonDropsConfigReader;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Lazy;
@@ -7,7 +8,11 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    DRAGON(5, 2420, 10.0f, 5.0f, 20, () -> Ingredient.ofItems(ModItems.DRAGON_SCALE));
+    DRAGON(5,
+            DragonDropsConfigReader.config.dragon_tools.dragon_tool_durability,
+            DragonDropsConfigReader.config.dragon_tools.dragon_tool_mining_speed,
+            DragonDropsConfigReader.config.dragon_tools.dragon_tool_attack_damage,
+            DragonDropsConfigReader.config.dragon_tools.dragon_tool_enchantability, () -> Ingredient.ofItems(ModItems.DRAGON_SCALE));
 
     private final int miningLevel;
     private final int itemDurability;

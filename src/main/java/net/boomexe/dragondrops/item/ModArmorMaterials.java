@@ -1,6 +1,6 @@
 package net.boomexe.dragondrops.item;
 
-import net.boomexe.dragondrops.config.ModConfigs;
+import net.boomexe.dragondrops.config.DragonDropsConfigReader;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.ItemConvertible;
@@ -12,7 +12,15 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    DRAGON("dragon", 42, new int[]{4, 5, 9, 4}, 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, ModConfigs.DRAGON_ARMOR_TOUGHNESS, ModConfigs.DRAGON_ARMOR_KNOCKBACK, () -> {
+    DRAGON("dragon", DragonDropsConfigReader.config.dragon_armor.dragon_armor_durability_multiplier, new int[]{
+            DragonDropsConfigReader.config.dragon_armor.dragon_boots_protection,
+            DragonDropsConfigReader.config.dragon_armor.dragon_leggings_protection,
+            DragonDropsConfigReader.config.dragon_armor.dragon_chestplate_protection,
+            DragonDropsConfigReader.config.dragon_armor.dragon_helmet_protection},
+            DragonDropsConfigReader.config.dragon_tools.dragon_tool_enchantability,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            DragonDropsConfigReader.config.dragon_armor.dragon_armor_toughness,
+            DragonDropsConfigReader.config.dragon_armor.dragon_armor_knockback_resistance, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.DRAGON_SCALE});
     });
 
