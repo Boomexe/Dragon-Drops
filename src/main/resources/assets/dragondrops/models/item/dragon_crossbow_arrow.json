@@ -1,0 +1,6 @@
+{
+  "parent": "dragondrops:item/dragon_crossbow",
+  "textures": {
+    "layer0": "dragondrops:item/dragon_crossbow_arrow"
+  }
+}

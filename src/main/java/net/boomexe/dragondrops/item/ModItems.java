@@ -1,10 +1,15 @@
 package net.boomexe.dragondrops.item;
 
+import me.shedaniel.autoconfig.AutoConfig;
 import net.boomexe.dragondrops.DragonDrops;
+import net.boomexe.dragondrops.config.DragonDropsConfig;
+import net.boomexe.dragondrops.config.DragonDropsConfigReader;
 import net.boomexe.dragondrops.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.*;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.CrossbowItem;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -14,7 +19,7 @@ public class ModItems {
         new Item(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS)));
 
     public static final Item DRAGON_SCALE = registerItem("dragon_scale",
-            new Item(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxCount(16)));
+            new Item(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxCount(DragonDropsConfigReader.config.dragon_shards_scales.dragon_scale_stack_size)));
 
     public static final Item DRAGON_SWORD = registerItem("dragon_sword",
             new DragonSwordItem(ModToolMaterials.DRAGON, 3, -2.4f,
@@ -40,26 +45,29 @@ public class ModItems {
             new DragonTotemItem(new FabricItemSettings().maxCount(1)));
 
     public static final Item DRAGON_BOW = registerItem("dragon_bow",
-            new DragonBowItem(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxDamage(520)));
+            new DragonBowItem(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxDamage(DragonDropsConfigReader.config.dragon_bow.dragon_bow_durability)));
 
-    public static Item DRAGON_HELMET = registerItem("dragon_helmet",
+    public static final Item DRAGON_CROSSBOW = registerItem("dragon_crossbow",
+            new CrossbowItem(new FabricItemSettings().maxDamage(500)));
+
+    public static final Item DRAGON_HELMET = registerItem("dragon_helmet",
             new ArmorItem(ModArmorMaterials.DRAGON, EquipmentSlot.HEAD,
                     new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS)));
 
-    public static Item DRAGON_CHESTPLATE = registerItem("dragon_chestplate",
+    public static final Item DRAGON_CHESTPLATE = registerItem("dragon_chestplate",
             new ArmorItem(ModArmorMaterials.DRAGON, EquipmentSlot.CHEST,
                     new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS)));
 
-    public static Item DRAGON_LEGGINGS = registerItem("dragon_leggings",
+    public static final Item DRAGON_LEGGINGS = registerItem("dragon_leggings",
             new ArmorItem(ModArmorMaterials.DRAGON, EquipmentSlot.LEGS,
                     new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS)));
 
-    public static Item DRAGON_BOOTS = registerItem("dragon_boots",
+    public static final Item DRAGON_BOOTS = registerItem("dragon_boots",
             new ArmorItem(ModArmorMaterials.DRAGON, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS)));
 
-//    public static final Item DRAGON_TRIDENT = registerItem("dragon_trident",
-//            new DragonTridentItem(new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS).maxDamage(420)));
+    public static final Item DRAGON_TRIDENT = registerItem("dragon_trident",
+            new DragonTridentItem(new FabricItemSettings().maxDamage(420)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(DragonDrops.MOD_ID, name), item);

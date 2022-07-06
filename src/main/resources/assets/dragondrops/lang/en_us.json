@@ -10,6 +10,7 @@
 
   "item.dragondrops.dragon_totem": "Dragon Scale-Plated Totem of Undying",
   "item.dragondrops.dragon_bow": "Dragon Scale-Strengthened Bow",
+  "item.dragondrops.dragon_crossbow": "Dragon Scale-Strengthened Crossbow",
   "item.dragondrops.dragon_trident": "Dragon Scale-Strengthened Trident",
 
   "item.dragondrops.dragon_helmet": "Dragon Helmet",
@@ -33,5 +34,29 @@
   "advancements.husbandry.obtain_dragon_hoe.title": "True Dedication",
   "advancements.husbandry.obtain_dragon_hoe.description": "Use a Dragon Scale to upgrade a Netherite Hoe... then contemplate the meaning of life",
 
-  "itemGroup.dragondrops.dragon_drops": "Dragon Drops"
+  "itemGroup.dragondrops.dragon_drops": "Dragon Drops",
+
+  "text.autoconfig.dragondrops.title": "Dragon Drops Options",
+  "text.autoconfig.dragondrops.option.dragon_shards_scales": "Dragon Shards/Scales",
+  "text.autoconfig.dragondrops.option.dragon_shards_scales.minimum_fragments": "Minimum Ender Dragon Fragment Drops",
+  "text.autoconfig.dragondrops.option.dragon_shards_scales.maximum_fragments": "Maximum Ender Dragon Fragment Drops",
+  "text.autoconfig.dragondrops.option.dragon_shards_scales.dragon_scale_stack_size": "Stack size for Dragon Scales",
+  "text.autoconfig.dragondrops.option.dragon_tools": "Dragon Tools",
+  "text.autoconfig.dragondrops.option.dragon_tools.dragon_tool_attack_damage": "Attack Damage",
+  "text.autoconfig.dragondrops.option.dragon_tools.dragon_tool_durability": "Durability",
+  "text.autoconfig.dragondrops.option.dragon_tools.dragon_tool_enchantability": "Tool/Armor Enchantability",
+  "text.autoconfig.dragondrops.option.dragon_tools.dragon_tool_mining_speed": "Mining Speed",
+  "text.autoconfig.dragondrops.option.dragon_armor": "Dragon Armor",
+  "text.autoconfig.dragondrops.option.dragon_armor.dragon_helmet_protection": "Helmet Protection Value",
+  "text.autoconfig.dragondrops.option.dragon_armor.dragon_chestplate_protection": "Chestplate Protection Value",
+  "text.autoconfig.dragondrops.option.dragon_armor.dragon_leggings_protection": "Leggings Protection Value",
+  "text.autoconfig.dragondrops.option.dragon_armor.dragon_boots_protection": "Boots Protection Value",
+  "text.autoconfig.dragondrops.option.dragon_armor.dragon_armor_durability_multiplier": "Durability Multiplier",
+  "text.autoconfig.dragondrops.option.dragon_armor.dragon_armor_toughness": "Toughness",
+  "text.autoconfig.dragondrops.option.dragon_armor.dragon_armor_knockback_resistance": "Knockback Resistance",
+  "text.autoconfig.dragondrops.option.dragon_bow": "Dragon Bow",
+  "text.autoconfig.dragondrops.option.dragon_bow.dragon_bow_speed": "Speed",
+  "text.autoconfig.dragondrops.option.dragon_bow.dragon_bow_divergence": "Divergence",
+  "text.autoconfig.dragondrops.option.dragon_bow.dragon_bow_durability": "Durability"
+
 }

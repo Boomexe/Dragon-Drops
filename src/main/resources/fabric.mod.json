@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.boomexe.dragondrops.DragonDropsClient"
+    ],
+    "modmenu": [
+      "net.boomexe.dragondrops.config.ModMenuIntegration"
     ]
   },
 
