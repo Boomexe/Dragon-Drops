@@ -1,8 +1,6 @@
 package net.boomexe.dragondrops.item;
 
-import me.shedaniel.autoconfig.AutoConfig;
 import net.boomexe.dragondrops.DragonDrops;
-import net.boomexe.dragondrops.config.DragonDropsConfig;
 import net.boomexe.dragondrops.config.DragonDropsConfigReader;
 import net.boomexe.dragondrops.item.custom.*;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -65,6 +63,9 @@ public class ModItems {
     public static final Item DRAGON_BOOTS = registerItem("dragon_boots",
             new ArmorItem(ModArmorMaterials.DRAGON, EquipmentSlot.FEET,
                     new FabricItemSettings().group(ModItemGroup.DRAGON_DROPS)));
+
+    public static final Item DRAGON_ELYTRA = registerItem("dragon_elytra",
+            new DragonElytraItem(new FabricItemSettings().maxDamage(500)));
 
     public static final Item DRAGON_TRIDENT = registerItem("dragon_trident",
             new DragonTridentItem(new FabricItemSettings().maxDamage(420)));

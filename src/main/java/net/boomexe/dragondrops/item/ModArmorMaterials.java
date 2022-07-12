@@ -22,6 +22,18 @@ public enum ModArmorMaterials implements ArmorMaterial {
             DragonDropsConfigReader.config.dragon_armor.dragon_armor_toughness,
             DragonDropsConfigReader.config.dragon_armor.dragon_armor_knockback_resistance, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ModItems.DRAGON_SCALE});
+    }),
+
+    DRAGON_ELYTRA("dragon_elytra", DragonDropsConfigReader.config.dragon_armor.dragon_armor_durability_multiplier, new int[]{
+            DragonDropsConfigReader.config.dragon_armor.dragon_boots_protection,
+            DragonDropsConfigReader.config.dragon_armor.dragon_leggings_protection,
+            DragonDropsConfigReader.config.dragon_armor.dragon_chestplate_protection,
+            DragonDropsConfigReader.config.dragon_armor.dragon_helmet_protection},
+            DragonDropsConfigReader.config.dragon_tools.dragon_tool_enchantability,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE,
+            DragonDropsConfigReader.config.dragon_armor.dragon_armor_toughness,
+            DragonDropsConfigReader.config.dragon_armor.dragon_armor_knockback_resistance, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ModItems.DRAGON_SCALE});
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
