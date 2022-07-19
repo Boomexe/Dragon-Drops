@@ -11,6 +11,7 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.LiteralTextContent;
 import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -34,7 +35,7 @@ public class DragonSwordItem extends SwordItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         EntityType targetType = target.getType();
-        Float extraDamage = 6f;
+        Float extraDamage = 1f;
 
         if (targetType == EntityType.ENDERMAN || targetType == EntityType.ENDER_DRAGON || targetType == EntityType.ENDERMITE || targetType == EntityType.SHULKER) {
             target.damage(DamageSource.player((PlayerEntity) attacker), extraDamage);

@@ -9,7 +9,7 @@
     "show_toast": true,
     "announce_to_chat": true
   },
-  "parent": "minecraft:husbandry/obtain_netherite_hoe",
+  "parent": "dragondrops:dragon_drops",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:inventory_changed",
@@ -22,9 +22,6 @@
           }
         ]
       }
-    },
-    "rewards": {
-      "experience": 150
     }
   }
 }

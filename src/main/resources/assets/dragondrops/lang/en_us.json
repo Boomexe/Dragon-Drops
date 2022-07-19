@@ -34,6 +34,9 @@
   "advancements.husbandry.obtain_dragon_hoe.title": "True Dedication",
   "advancements.husbandry.obtain_dragon_hoe.description": "Use a Dragon Scale to upgrade a Netherite Hoe... then contemplate the meaning of life",
 
+  "advancements.nether.dragon_armor.title": "Scaled up",
+  "advancements.nether.dragon_armor.description": "Obtain a full set of Netherite Armor",
+
   "itemGroup.dragondrops.dragon_drops": "Dragon Drops",
 
   "text.autoconfig.dragondrops.title": "Dragon Drops Options",
