@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "dragondrops:dragon_chestplate"
+    },
+    "title": "Fully Scaled",
+    "description": "Aquire a full set of Dragon Armor",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "dragondrops:dragon_drops",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "dragondrops:dragon_helmet"
+            ],
+            "items": [
+              "dragondrops:dragon_chestplate"
+            ],
+            "items": [
+              "dragondrops:dragon_leggings"
+            ],
+            "items": [
+              "dragondrops:dragon_boots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,7 +1,5 @@
 package net.boomexe.dragondrops;
 
-import com.oroarmor.multiitemlib.api.UniqueItemRegistry;
-import com.oroarmor.multiitemlib.mixin.render.HeldItemRendererMixin;
 import net.boomexe.dragondrops.config.DragonDropsConfigReader;
 import net.boomexe.dragondrops.entity.ModEntities;
 import net.boomexe.dragondrops.item.ModItems;
@@ -25,9 +23,6 @@ public class DragonDrops implements ModInitializer {
         ModItems.registerModItems();
         ModEntities.registerModEntities();
         ModLootTableModifiers.modifyLootTables();
-
-        UniqueItemRegistry.TRIDENT.addItemToRegistry(ModItems.DRAGON_TRIDENT);
-
 
         ModContainer container = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow();
         ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(MOD_ID, "legacy-textures"), container, ResourcePackActivationType.NORMAL);
