@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "dragondrops:dragon_scale"
   },
@@ -8,5 +8,8 @@
   },
   "result": {
     "item": "dragondrops:dragon_sword"
+  },
+  "template": {
+    "item": "dragondrops:dragon_upgrade_smithing_template"
   }
 }

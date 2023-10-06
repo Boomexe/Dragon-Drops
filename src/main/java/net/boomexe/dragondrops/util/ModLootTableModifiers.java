@@ -1,6 +1,6 @@
 package net.boomexe.dragondrops.util;
 
-import net.boomexe.dragondrops.config.DragonDropsConfigReader;
+import net.boomexe.dragondrops.DragonDrops;
 import net.boomexe.dragondrops.item.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.loot.LootPool;
@@ -19,7 +19,7 @@ public class ModLootTableModifiers {
             if (source.isBuiltin() && DRAGON_ID.equals(id)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .with(ItemEntry.builder(ModItems.DRAGON_FRAGMENT))
-                        .rolls(ConstantLootNumberProvider.create(ThreadLocalRandom.current().nextInt(DragonDropsConfigReader.config.dragon_shards_scales.minimum_fragments, DragonDropsConfigReader.config.dragon_shards_scales.maximum_fragments) + 1));
+                        .rolls(ConstantLootNumberProvider.create(ThreadLocalRandom.current().nextInt(DragonDrops.config.dragon_shards_scales.minimum_fragments, DragonDrops.config.dragon_shards_scales.maximum_fragments) + 1));
 
                 tableBuilder.pool(poolBuilder);
             }

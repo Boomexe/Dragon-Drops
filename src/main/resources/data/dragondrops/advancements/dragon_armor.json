@@ -18,13 +18,19 @@
           {
             "items": [
               "dragondrops:dragon_helmet"
-            ],
+            ]
+          },
+          {
             "items": [
               "dragondrops:dragon_chestplate"
-            ],
+            ]
+          },
+          {
             "items": [
               "dragondrops:dragon_leggings"
-            ],
+            ]
+          },
+          {
             "items": [
               "dragondrops:dragon_boots"
             ]

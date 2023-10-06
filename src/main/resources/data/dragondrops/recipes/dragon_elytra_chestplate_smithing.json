@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "dragondrops:dragon_elytra"
+  },
+  "base": {
+    "item": "dragondrops:dragon_chestplate"
+  },
+  "result": {
+    "item": "dragondrops:dragon_elytra_chestplate"
+  },
+  "template": {
+    "item": "dragondrops:dragon_upgrade_smithing_template"
+  }
+}

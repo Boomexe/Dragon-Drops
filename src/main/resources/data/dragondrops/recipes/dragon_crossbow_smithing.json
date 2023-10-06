@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "dragondrops:dragon_scale"
+  },
+  "base": {
+    "item": "minecraft:crossbow"
+  },
+  "result": {
+    "item": "dragondrops:dragon_crossbow"
+  },
+  "template": {
+    "item": "dragondrops:dragon_upgrade_smithing_template"
+  }
+}

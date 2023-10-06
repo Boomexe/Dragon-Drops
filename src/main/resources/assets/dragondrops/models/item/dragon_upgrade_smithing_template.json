@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "dragondrops:item/dragon_upgrade_smithing_template"
+  }
+}
